@@ -92,7 +92,7 @@ else:
 
     away_team = statcast.iloc[0, 20]
 
-    batstatcast = pybaseball.statcast(formatted_date, team=away_team)
+    batstatcast = pybaseball.statcast(formatted_date, team=selected_team_abbreviation)
 
     bat_id_list = list(batstatcast['batter'].unique())
 
