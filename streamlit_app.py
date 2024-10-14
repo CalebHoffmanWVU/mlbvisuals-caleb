@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 st.title("MLB Visualizations Website for 2024")
 st.subheader("This application will allow you to go into your favorite teams game and understand strike zone data for both pitchers and batters")
 
+
+note = "Note"
 mlb_teams = {
     'Arizona Diamondbacks': 'ARI',
     'Atlanta Braves': 'ATL',
