@@ -91,8 +91,11 @@ else:
     st.subheader("Batter Visualization")
 
     away_team = statcast.iloc[0, 20]
-
-    batstatcast = pybaseball.statcast(formatted_date, team=selected_team_abbreviation)
+    home_team = statcast.iloc[0, 19]
+    if away_team == selected_team_abbreviation:
+        batstatcast = pybaseball.statcast(formatted_date, team=home_team)
+    else:
+        batstatcast = pybaseball.statcast(formatted_date, team=away_team)
 
     bat_id_list = list(batstatcast['batter'].unique())
 
