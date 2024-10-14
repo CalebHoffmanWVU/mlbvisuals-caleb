@@ -2,13 +2,13 @@ import streamlit as st
 import pandas as pd
 import datetime
 import pybaseball
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 st.title("MLB Visualizations Website for 2024")
 st.subheader("This application will allow you to go into your favorite teams game and understand strike zone data for both pitchers and batters")
 
 
-note = "Note"
+note = "Neontetete"
 mlb_teams = {
     'Arizona Diamondbacks': 'ARI',
     'Atlanta Braves': 'ATL',
